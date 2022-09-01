@@ -104,7 +104,6 @@ export PATH="$HOME/bin:$PATH"
 
 # Custom aliases
 alias meow="cat"
-alias mutter-settings="gjs $HOME/mutter-rounded-setting/dist/mutter_settings.js"
 alias neofetch="neofetch --ascii $HOME/totoro.txt"
 alias update-grub="sudo bash $HOME/bin/update-grub.sh"
 
