@@ -100,7 +100,6 @@ export EDITOR='nano'
 export USE_CCACHE=1
 export CCACHE_EXEC=$(which ccache)
 export CCACHE_DIR=/mnt/ccache
-export PATH="$HOME/bin:$PATH"
 
 # Custom aliases
 alias meow="cat"
