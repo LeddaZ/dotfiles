@@ -104,7 +104,8 @@ export CCACHE_DIR=/mnt/ccache
 # Custom aliases
 alias meow="cat"
 alias neofetch="neofetch --ascii $HOME/totoro.txt"
-alias update-grub="sudo bash $HOME/bin/update-grub.sh"
+# For Fedora only
+# alias update-grub="sudo bash $HOME/bin/update-grub.sh"
 
 # Alacritty bash completions
 fpath+=${ZDOTDIR:-~}/.zsh_functions
