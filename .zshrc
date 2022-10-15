@@ -100,6 +100,7 @@ export EDITOR='nano'
 export USE_CCACHE=1
 export CCACHE_EXEC=$(which ccache)
 export CCACHE_DIR=/mnt/ccache
+source ~/.profile
 
 # Custom aliases
 alias meow="cat"
@@ -109,3 +110,4 @@ alias neofetch="neofetch --ascii $HOME/totoro.txt"
 
 # Alacritty bash completions
 fpath+=${ZDOTDIR:-~}/.zsh_functions
+export PATH=$PATH:/home/leddaz/.spicetify
