@@ -110,4 +110,3 @@ alias neofetch="neofetch --ascii $HOME/totoro.txt"
 
 # Alacritty bash completions
 fpath+=${ZDOTDIR:-~}/.zsh_functions
-export PATH=$PATH:/home/leddaz/.spicetify
