@@ -1,3 +1,7 @@
 [user]
 	name = LeddaZ
 	email = leonardoledda@gmail.com
+[color]
+	ui = auto
+[core]
+	editor = micro
