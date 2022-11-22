@@ -8,7 +8,6 @@ Various configurations I keep across Linux distros
 - `bin/update-grub.sh`: Script to properly update GRUB configuration on Fedora
 - `dev-stuff/sign.txt`: Commands to sign an Android build
 - `.bashrc`: Bash rc file
-- `.gitconfig`: Git configuration
 - `.profile`: Profile file
 - `.zshrc`: Zsh rc file
 - `mute.conf`: Config file for the `snd-hda-intel` kernel module to fix the mute LED on HP laptops, copy to `/etc/modprobe.d` and reboot
