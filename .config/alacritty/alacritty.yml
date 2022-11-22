@@ -20,4 +20,4 @@ shell:
   program: /bin/zsh
   
 import:
-  - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
+  - ~/.config/alacritty/themes/ayu_dark.yml
