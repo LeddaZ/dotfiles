@@ -1,8 +1,1 @@
-sign_target_files_apks -o -d ~/dev-stuff/keys/.android-certs \
-    $OUT/obj/PACKAGING/target_files_intermediates/*-target_files-*.zip \
-    signed-target_files.zip
-
-ota_from_target_files -k ~/dev-stuff/keys/.android-certs/releasekey \
-    --block \
-    signed-target_files.zip \
-    lineage-18.1-20220823-UNOFFICIAL-nx_tab-signed.zip
+sign_target_files_apks -o -d ~/dev-stuff/keys $OUT/obj/PACKAGING/target_files_intermediates/*-target_files-*.zip signed-target_files.zip && ota_from_target_files -k ~/dev-stuff/keys/releasekey --block signed-target_files.zip statix_curtana-20230320-13-v6.2-TIRAMISU.zip
