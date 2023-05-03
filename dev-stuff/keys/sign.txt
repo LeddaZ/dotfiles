@@ -1,1 +1,0 @@
-sign_target_files_apks -o -d ~/dev-stuff/keys $OUT/obj/PACKAGING/target_files_intermediates/*-target_files-*.zip signed-target_files.zip && ota_from_target_files -k ~/dev-stuff/keys/releasekey --block signed-target_files.zip statix_curtana-20230320-13-v6.2-TIRAMISU.zip
