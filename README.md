@@ -4,6 +4,7 @@ Various configurations I keep across Linux distros
 ## Description
 - `.config/alacritty/alacritty.yml`: Alacritty configuration file
 - `.local/share/fonts`: Additional fonts
+- `bin/shfmt`: Bash script formatter
 - `bin/unzip.sh`: `unzip` wrapper to disable zipbomb detection
 - `bin/update-grub.sh`: Script to properly update GRUB configuration on Fedora
 - `dev-stuff/sign.txt`: Commands to sign an Android build
