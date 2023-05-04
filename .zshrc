@@ -104,7 +104,7 @@ source ~/.profile
 
 # Custom aliases
 alias meow="cat"
-alias neofetch="neofetch --ascii $HOME/totoro.txt"
+# alias neofetch="neofetch --ascii $HOME/totoro.txt"
 # For Fedora only
 # alias update-grub="sudo bash $HOME/bin/update-grub.sh"
 
