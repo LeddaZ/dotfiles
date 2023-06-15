@@ -97,8 +97,7 @@ export EDITOR='micro'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Environment variables
-export USE_CCACHE=1
-export CCACHE_EXEC=$(which ccache)
+export GPG_TTY=$(tty)
 export STATIX_BUILD_TYPE=TIRAMISU
 source ~/.profile
 
