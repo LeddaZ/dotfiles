@@ -1,0 +1,8 @@
+[Unit]
+Description=Disable PROCHOT
+
+[Service]
+ExecStart=/home/leddaz/bin/disable-prochot.sh
+
+[Install]
+WantedBy=multi-user.target
