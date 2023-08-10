@@ -5,6 +5,7 @@ Various configurations I keep across Linux distros
 - `.config/alacritty/alacritty.yml`: Alacritty configuration file
 - `.local/share/fonts`: Additional fonts
 - `bin/disable-prochot.sh`: Script to disable BD PROCHOT (the value is adapted to my laptop; read [here](https://github.com/DivyanshuVerma/throttlestop-linux) for more info); also goes to `/usr/lib/systemd/system-sleep`. Needs the `msr` kernel module.
+- `bin/pd.sh`: Script to upload files to Pixeldrain (`pd <link1> <link2>`)
 - `bin/shfmt`: Bash script formatter
 - `bin/unzip.sh`: `unzip` wrapper to disable zipbomb detection
 - `bin/update-grub.sh`: Script to properly update GRUB configuration on Fedora
