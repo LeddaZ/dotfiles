@@ -98,7 +98,6 @@ export EDITOR='micro'
 
 # Environment variables
 export GPG_TTY=$(tty)
-export STATIX_BUILD_TYPE=TIRAMISU
 source ~/.profile
 
 # Custom aliases

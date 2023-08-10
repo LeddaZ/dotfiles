@@ -1,1 +1,1 @@
-export STATIX_BUILD_TYPE=TIRAMISU
+export GPG_TTY=$(tty)
