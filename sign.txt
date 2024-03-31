@@ -1,4 +1,4 @@
-sign_target_files_apks -o -d ~/dev-stuff/keys $OUT/obj/PACKAGING/target_files_intermediates/*-target_files-*.zip signed-target_files.zip && ota_from_target_files -k ~/dev-stuff/keys/releasekey --block signed-target_files.zip statix_raven-20230911-13-v6.3-UNOFFICIAL.zip && img_from_target_files signed-target_files.zip statix_raven-20230911-13-v6.3-UNOFFICIAL-img.zip
+sign_target_files_apks -o -d ~/dev-stuff/keys $OUT/obj/PACKAGING/target_files_intermediates/*-target_files-*.zip signed-target_files.zip && ota_from_target_files -k ~/dev-stuff/keys/releasekey --block signed-target_files.zip statix_miatoll-20240212-14-v7.1-UPSIDEDOWNCAKE.zip && img_from_target_files signed-target_files.zip statix_miatoll-20240212-14-v7.1-UPSIDEDOWNCAKE-img.zip
 
 sign_target_files_apks -o -d ~/dev-stuff/keys-switch \
     --extra_apks com.android.adbd.apex=$HOME/dev-stuff/keys-switch/com.android.adbd \
