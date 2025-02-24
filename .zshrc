@@ -105,7 +105,6 @@ alias meow="cat"
 alias pd="~/bin/pd.sh"
 alias cls="clear"
 alias aapt2="java -jar $HOME/bin/aapt2.jar"
-# alias neofetch="neofetch --ascii $HOME/totoro.txt"
 # For Fedora only
 # alias update-grub="sudo bash $HOME/bin/update-grub.sh"
 
