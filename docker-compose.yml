@@ -29,8 +29,20 @@ services:
       - jfconfig:/config
       - /media/ssd/Media:/media
 
+  uptime-kuma:
+    image: louislam/uptime-kuma:1
+    container_name: uptime-kuma
+    restart: always
+    ports:
+      - "3001:3001"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - uptime-kuma:/app/data
+
 volumes:
   portainer_data:
     external: true
   jfconfig:
+    external: true
+  uptime-kuma:
     external: true
