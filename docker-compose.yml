@@ -27,7 +27,7 @@ services:
       - "/dev/video12:/dev/video12"
     volumes:
       - jfconfig:/config
-      - /media/ssd/Media:/media
+      - /media/hdd/Media:/media
 
   uptime-kuma:
     image: louislam/uptime-kuma:1
@@ -39,10 +39,36 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - uptime-kuma:/app/data
 
+  redis:
+    image: redis:latest
+    container_name: redis
+    restart: always
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: ["redis-server", "--appendonly", "yes"]
+
+  homeassistant:
+      container_name: homeassistant
+      image: ghcr.io/home-assistant/home-assistant:stable
+      restart: unless-stopped
+      privileged: true
+      environment:
+        - TZ=Europe/Rome
+      volumes:
+        - ha_config:/config
+        - /run/dbus:/run/dbus:ro
+      network_mode: host
+
 volumes:
   portainer_data:
     external: true
   jfconfig:
     external: true
   uptime-kuma:
+    external: true
+  redis_data:
+    external: true
+  ha_config:
     external: true
