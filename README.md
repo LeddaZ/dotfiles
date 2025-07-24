@@ -5,7 +5,6 @@ Various configurations I keep across Linux distros
 - `.local/share/fonts`: Additional fonts
 - `bin/apktool`: Wrapper script for `apktool`
 - `bin/disable-prochot.sh`: Script to disable BD PROCHOT (the value is adapted to my laptop; read [here](https://github.com/DivyanshuVerma/throttlestop-linux) for more info); also goes to `/usr/lib/systemd/system-sleep`. Needs the `msr` kernel module.
-- `bin/pd.sh`: Script to upload files to Pixeldrain (`pd <link1> <link2>`)
 - `.bashrc`: Bash config file
 - `.profile`: Profile file
 - `.zshrc`: Zsh config file
