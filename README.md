@@ -12,3 +12,4 @@ Various configurations I keep across Linux distros
 - `disable-prochot.service`: systemd unit to run the BD PROCHOT disable script; copy to `/etc/systemd/system` and run `sudo systemctl enable disable-prochot`, then reboot
 - `docker-compose.yml`: Docker Compose configuration for my containers
 - `mute.conf`: Config file for the `snd-hda-intel` kernel module to fix the mute LED on HP laptops, copy to `/etc/modprobe.d` and reboot
+- `zed-settings.json`: My Zed settings
