@@ -1,7 +1,7 @@
 # dotfiles
 Various configurations I keep across Linux distros
 
-## Description
+## Contents
 - `.local/share/fonts`: Additional fonts
 - `bin/disable-prochot.sh`: Script to disable BD PROCHOT (the value is adapted to my laptop; read [here](https://github.com/DivyanshuVerma/throttlestop-linux) for more info); also goes to `/usr/lib/systemd/system-sleep`. Needs the `msr` kernel module.
 - `.bashrc`: Bash config file

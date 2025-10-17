@@ -1,15 +1,4 @@
 services:
-  portainer:
-    image: portainer/portainer-ce:lts
-    container_name: portainer
-    restart: always
-    ports:
-      - "8000:8000"
-      - "9443:9443"
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - portainer_data:/data
-
   jellyfin:
     image: lscr.io/linuxserver/jellyfin:latest
     container_name: jellyfin
@@ -39,16 +28,6 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - uptime-kuma:/app/data
 
-  redis:
-    image: redis:latest
-    container_name: redis
-    restart: always
-    ports:
-      - "6379:6379"
-    volumes:
-      - redis_data:/data
-    command: ["redis-server", "--appendonly", "yes"]
-
   homeassistant:
       container_name: homeassistant
       image: ghcr.io/home-assistant/home-assistant:stable
@@ -61,14 +40,33 @@ services:
         - /run/dbus:/run/dbus:ro
       network_mode: host
 
+  gitea:
+    image: docker.gitea.com/gitea:latest
+    container_name: gitea
+    environment:
+      - USER_UID=1002
+      - USER_GID=1003
+    restart: unless-stopped
+    networks:
+      - gitea
+    volumes:
+      - gitea_data:/data
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - "4799:3000"
+      - "222:22"
+
 volumes:
-  portainer_data:
-    external: true
   jfconfig:
     external: true
   uptime-kuma:
     external: true
-  redis_data:
-    external: true
   ha_config:
     external: true
+  gitea_data:
+    external: true
+
+networks:
+  gitea:
+    external: false
