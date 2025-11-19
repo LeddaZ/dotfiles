@@ -1,40 +1,33 @@
-// Zed settings
-//
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
-//
-// To see all of Zed's default settings without changing your
-// custom settings, run `zed: open default settings` from the
-// command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "icon_theme": "Catppuccin Mocha",
-  "base_keymap": "VSCode",
-  "ui_font_size": 16,
-  "buffer_font_size": 14,
-  "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "Catppuccin Mocha"
-  },
   "autosave": {
     "after_delay": {
       "milliseconds": 1000
     }
   },
-  "auto_update": false,
-  "buffer_font_family": "CommitMono Nerd Font Mono",
+  "base_keymap": "VSCode",
+  "buffer_font_family": "Google Sans Code",
+  "buffer_font_size": 14.0,
   "gutter": {
     "min_line_number_digits": 2
   },
+  "icon_theme": "Catppuccin Mocha",
   "indent_guides": {
     "line_width": 2
   },
-  "ui_font_family": "Inter Variable Text",
-  "ui_font_features": {
-    "ss01": 1
+  "terminal": {
+    "font_family": "CommitMono Nerd Font Mono"
   },
   "title_bar": {
     "show_branch_icon": true,
     "show_menus": true
+  },
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Mocha"
+  },
+  "ui_font_family": "Google Sans Flex",
+  "ui_font_features": {
+    "ss02": 1
   }
 }
