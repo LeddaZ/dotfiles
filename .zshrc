@@ -50,15 +50,10 @@ export GPG_TTY=$(tty)
 # Custom aliases
 alias meow="cat"
 alias cls="clear"
-alias down="docker compose down"
-alias up="docker compose up -d"
-alias dpull="docker compose pull"
-alias dupd="docker compose down && docker compose pull && docker image prune && docker compose up -d"
+alias down="/home/leddaz/services/manage.sh down"
+alias up="/home/leddaz/services/manage.sh up"
+alias dpull="/home/leddaz/services/manage.sh pull"
+alias dupd="down && dpull && up && docker image prune -a"
 alias reboot="sudo systemctl reboot"
 alias poweroff="sudo systemctl poweroff"
 
-$HOME/milkman.sh
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

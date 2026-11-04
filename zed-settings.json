@@ -1,4 +1,46 @@
 {
+  "edit_predictions": {
+    "open_ai_compatible_api": {
+      "model": "unsloth/gemma-4-26B-A4B-it-qat-GGUF:UD-Q4_K_XL",
+      "api_url": "http://localhost:8080"
+    }
+  },
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+  "soft_wrap": "editor_width",
+  "agent": {
+    "dock": "right",
+    "tool_permissions": {
+      "tools": {
+        "terminal": {
+          "default": "allow"
+        }
+      }
+    },
+    "default_model": {
+      "provider": "llama.cpp",
+      "model": "unsloth/gemma-4-26B-A4B-it-qat-GGUF:UD-Q4_K_XL",
+      "enable_thinking": false
+    },
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "disable_ai": false,
+  "languages": {
+    "YAML": {
+      "tab_size": 2
+    }
+  },
   "autosave": {
     "after_delay": {
       "milliseconds": 1000
@@ -18,7 +60,7 @@
     "font_family": "CommitMono Nerd Font Mono"
   },
   "title_bar": {
-    "show_branch_icon": true,
+    "show_branch_status_icon": true,
     "show_menus": true
   },
   "theme": {
